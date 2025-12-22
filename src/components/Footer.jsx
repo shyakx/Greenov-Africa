@@ -107,42 +107,28 @@ const Footer = () => {
                   <Link to="/services" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Renewable Energy
+                    Solar-Powered Cooling
                   </Link>
                 </li>
                 <li>
                   <Link to="/services" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Energy Efficiency
+                    Farmer Training Programs
                   </Link>
                 </li>
                 <li>
                   <Link to="/services" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Waste Management
+                    Post-Harvest Management
                   </Link>
                 </li>
                 <li>
                   <Link to="/services" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Carbon Assessment
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" style={footerLinkStyle}
-                    onMouseEnter={(e) => handleLinkHover(e, true)}
-                    onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Green Building
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services" style={footerLinkStyle}
-                    onMouseEnter={(e) => handleLinkHover(e, true)}
-                    onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Compliance
+                    Off-Grid Solutions
                   </Link>
                 </li>
               </ul>

@@ -39,9 +39,7 @@ const WhoWeAre = () => {
                 lineHeight: '1.7',
                 textAlign: 'left'
               }}>
-                GreenNov Africa Ltd was founded with a vision to revolutionize the way we approach
-                environmental sustainability. We believe that businesses can thrive while
-                protecting our planet.
+                GreenNov Africa Ltd was founded with a vision to empower African smallholder farmers with sustainable, affordable cooling technology. We specialize in reducing post-harvest losses through clean energy solutions.
               </p>
               <p className="mb-4" style={{ 
                 color: 'rgba(255, 255, 255, 0.95)',
@@ -50,10 +48,7 @@ const WhoWeAre = () => {
                 lineHeight: '1.7',
                 textAlign: 'left'
               }}>
-                Our team consists of passionate environmentalists, engineers, and business
-                professionals who are dedicated to creating innovative green solutions. We
-                combine expertise in renewable energy, waste management, and sustainable
-                practices to deliver comprehensive environmental services.
+                Our team consists of passionate engineers, agricultural experts, and business professionals dedicated to creating innovative solar-powered cooling solutions. We combine expertise in renewable energy and post-harvest management to deliver technology that extends produce shelf life and reduces losses.
               </p>
               <p className="mb-4" style={{ 
                 color: 'rgba(255, 255, 255, 0.95)',
@@ -62,10 +57,7 @@ const WhoWeAre = () => {
                 lineHeight: '1.7',
                 textAlign: 'left'
               }}>
-                With years of experience and a commitment to excellence, we've helped
-                numerous organizations reduce their environmental impact while improving their
-                bottom line. Our mission is to make sustainability accessible, practical, and
-                profitable for everyone.
+                With a commitment to excellence, we've helped numerous farmers reduce post-harvest losses by up to 60%, increase their income, and improve food security. Our mission is to make solar-powered cooling technology accessible and affordable for all farmers, especially those in off-grid communities.
               </p>
               <div className="row g-4 mt-4">
                 <div className="col-md-6">
@@ -81,9 +73,7 @@ const WhoWeAre = () => {
                       Our Team
                     </h5>
                     <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                      A diverse group of experts including environmental scientists, renewable
-                      energy engineers, sustainability consultants, and business strategists
-                      working together to create impactful solutions.
+                      A diverse group of experts including solar energy engineers, agricultural specialists, post-harvest management consultants, and business strategists working together to reduce food losses and improve farmer livelihoods.
                     </p>
                   </div>
                 </div>
@@ -100,9 +90,7 @@ const WhoWeAre = () => {
                       Our Expertise
                     </h5>
                     <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                      Specialized knowledge in solar and wind energy systems, waste-to-energy
-                      conversion, carbon footprint analysis, green building certifications, and
-                      sustainable supply chain management.
+                      Specialized knowledge in solar-powered cooling systems, automated evaporative cooling technology, post-harvest management, farmer training programs, and off-grid renewable energy solutions for agricultural applications.
                     </p>
                   </div>
                 </div>
@@ -123,8 +111,7 @@ const WhoWeAre = () => {
                   Our Mission
                 </h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  To provide innovative, sustainable solutions that help businesses and
-                  communities reduce their environmental footprint while achieving their goals.
+                  To empower African smallholder farmers with sustainable, affordable cooling technology that reduces post-harvest losses, increases farmer income, improves food security, and promotes environmental sustainability through clean energy solutions.
                 </p>
               </div>
             </div>
@@ -140,8 +127,7 @@ const WhoWeAre = () => {
                   Our Vision
                 </h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  A world where sustainable practices are the norm, and businesses thrive in
-                  harmony with the environment.
+                  A world where African farmers have access to affordable, clean energy cooling technology that eliminates post-harvest losses and ensures food security for all.
                 </p>
               </div>
             </div>
@@ -157,8 +143,7 @@ const WhoWeAre = () => {
                   Our Values
                 </h4>
                 <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  Integrity, innovation, sustainability, and excellence guide everything we do.
-                  We're committed to making a positive impact.
+                  Innovation, sustainability, accessibility, impact, and community guide everything we do. We're committed to reducing post-harvest losses and improving farmer livelihoods.
                 </p>
               </div>
             </div>

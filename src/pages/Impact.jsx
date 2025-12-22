@@ -7,24 +7,24 @@ const Impact = () => {
   }, [])
   const impacts = [
     {
-      metric: '50+',
-      label: 'Projects Completed',
-      description: 'Successfully delivered green solutions across various industries in Rwanda',
+      metric: '60%',
+      label: 'Post-Harvest Loss Reduction',
+      description: 'Average reduction in post-harvest losses for farmers using our solar-powered cooling solutions',
     },
     {
-      metric: '5,000+',
-      label: 'Tons CO₂ Reduced',
-      description: 'Helped clients reduce their carbon footprint significantly',
+      metric: '100%',
+      label: 'Solar-Powered',
+      description: 'All our cooling systems operate entirely on clean solar energy with zero grid electricity required',
     },
     {
       metric: '30+',
-      label: 'Happy Clients',
-      description: 'Organizations that have transformed their sustainability practices',
+      label: 'Farmers Trained',
+      description: 'Farmers and vendors trained in post-harvest management and cooling system operation',
     },
     {
-      metric: '25+',
-      label: 'MW Renewable Energy',
-      description: 'Clean energy capacity installed through our projects in Rwanda',
+      metric: '0',
+      label: 'Emissions',
+      description: 'Zero fuel costs and emissions - completely clean energy solution for off-grid communities',
     },
   ]
 
@@ -44,7 +44,7 @@ const Impact = () => {
                 Our Impact
               </h1>
               <p className="lead" style={{ fontSize: '1.3rem' }}>
-                Making a measurable difference for the planet
+                Reducing post-harvest losses and improving farmer livelihoods
               </p>
             </div>
           </div>
@@ -86,8 +86,8 @@ const Impact = () => {
                 Creating Lasting Change
               </h2>
               <p className="lead mb-4 text-center" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                At GreenNov Africa Ltd, we measure our success by the positive impact we create for
-                our clients, communities, and the environment.
+                At GreenNov Africa Ltd, we measure our success by the reduction in post-harvest losses, 
+                improvement in farmer income, and increase in food security we create for farming communities.
               </p>
             </div>
           </div>
@@ -96,24 +96,24 @@ const Impact = () => {
             <div className="col-md-6">
               <div className="card p-4 h-100">
                 <h4 className="mb-3" style={{ color: 'var(--primary-green)' }}>
-                  Environmental Impact
+                  Impact on Farmers
                 </h4>
                 <ul className="list-unstyled">
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Significant reduction in greenhouse gas emissions
+                    Up to 60% reduction in post-harvest losses
                   </li>
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Increased adoption of renewable energy sources
+                    Significant extension of produce shelf life
                   </li>
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Improved waste management and recycling rates
+                    Increased farmer income through reduced losses
                   </li>
                   <li style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Enhanced biodiversity and ecosystem health
+                    Improved food security for communities
                   </li>
                 </ul>
               </div>
@@ -121,24 +121,24 @@ const Impact = () => {
             <div className="col-md-6">
               <div className="card p-4 h-100">
                 <h4 className="mb-3" style={{ color: 'var(--primary-green)' }}>
-                  Business Impact
+                  Clean Energy Impact
                 </h4>
                 <ul className="list-unstyled">
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Reduced operational costs through energy efficiency
+                    100% solar-powered with zero grid electricity required
                   </li>
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Enhanced brand reputation and market position
+                    Zero fuel costs and emissions
                   </li>
                   <li className="mb-2" style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Improved compliance with environmental regulations
+                    Accessible to off-grid farming communities
                   </li>
                   <li style={{ color: '#374151' }}>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Increased employee engagement and satisfaction
+                    Low maintenance and sustainable operation
                   </li>
                 </ul>
               </div>
@@ -152,10 +152,10 @@ const Impact = () => {
                   Our Commitment
                 </h3>
                 <p className="lead text-center" style={{ color: '#374151' }}>
-                  We're committed to transparency and accountability. We track and report on
-                  our impact regularly, ensuring that our work delivers real, measurable
-                  results. Together with our clients, we're building a more sustainable future
-                  for generations to come.
+                  We're committed to reducing post-harvest losses and improving food security for African farmers. 
+                  We track and report on our impact regularly, ensuring that our solar-powered cooling solutions 
+                  deliver real, measurable results in reducing food waste and increasing farmer income. Together 
+                  with farming communities, we're building a more food-secure future through clean energy solutions.
                 </p>
               </div>
             </div>

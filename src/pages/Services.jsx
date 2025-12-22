@@ -6,42 +6,38 @@ const Services = () => {
   useEffect(() => {
     initScrollAnimations()
   }, [])
+
   const services = [
     {
-      title: 'Renewable Energy Solutions',
+      title: 'Solar-Powered Cooling Solution',
       description:
-        'Solar, wind, and hydroelectric power systems designed to meet your energy needs while reducing carbon footprint.',
-      icon: 'bi-lightning-charge-fill',
+        'Our flagship automated solar-powered fresh produce cooling appliance is specifically designed for off-grid farming communities. This stationary cooling system provides reliable, all-day temperature control to dramatically extend the shelf life of fruits and vegetables.',
+      icon: 'bi-thermometer-half',
+      features: [
+        '100% solar-powered with no grid electricity required',
+        'Automated evaporative cooling technology',
+        'Stationary design for farm and market installations',
+        'Zero fuel costs and emissions',
+        'Low maintenance requirements',
+        'Smart automation for optimal temperature control',
+        'Extends produce shelf life significantly',
+        'Reduces post-harvest losses by up to 60%'
+      ]
     },
     {
-      title: 'Energy Efficiency Consulting',
+      title: 'Farmer Training Programs',
       description:
-        'Comprehensive audits and recommendations to optimize energy usage and reduce costs.',
-      icon: 'bi-speedometer2',
-    },
-    {
-      title: 'Waste Management',
-      description:
-        'Sustainable waste reduction, recycling programs, and circular economy solutions.',
-      icon: 'bi-recycle',
-    },
-    {
-      title: 'Carbon Footprint Assessment',
-      description:
-        'Detailed analysis of your environmental impact with actionable reduction strategies.',
-      icon: 'bi-graph-up',
-    },
-    {
-      title: 'Green Building Design',
-      description:
-        'Eco-friendly construction and renovation solutions for sustainable infrastructure.',
-      icon: 'bi-building',
-    },
-    {
-      title: 'Environmental Compliance',
-      description:
-        'Guidance and support to meet environmental regulations and achieve certifications.',
-      icon: 'bi-shield-check',
+        'We provide comprehensive training to ensure farmers and vendors maximize the benefits of our cooling technology and improve their overall post-harvest management practices.',
+      icon: 'bi-person-badge',
+      features: [
+        'Proper produce handling techniques',
+        'Cooling system operation and maintenance',
+        'Best practices for storage and preservation',
+        'Quality control and grading methods',
+        'Market timing and value optimization',
+        'Ongoing technical support and consultation',
+        'Community knowledge sharing networks'
+      ]
     },
   ]
 
@@ -61,7 +57,7 @@ const Services = () => {
                 Our Services
               </h1>
               <p className="lead" style={{ fontSize: '1.3rem' }}>
-                Comprehensive green solutions tailored to your needs
+                Solar-powered solutions to reduce post-harvest losses
               </p>
             </div>
           </div>
@@ -73,29 +69,36 @@ const Services = () => {
         <div className="container">
           <div className="row g-4">
             {services.map((service, index) => (
-              <div key={index} className="col-md-6 col-lg-4">
-                <div className={`card p-5 h-100 text-center animate-on-scroll animate-on-scroll-delay-${index + 1} hover-lift hover-glow`}>
-                  <div className="mb-4">
+              <div key={index} className="col-lg-6">
+                <div className={`card p-4 h-100 animate-on-scroll animate-on-scroll-delay-${index + 1} hover-lift`}>
+                  <div className="mb-3">
                     <div 
                       style={{ 
-                        width: '80px', 
-                        height: '80px', 
+                        width: '60px', 
+                        height: '60px', 
                         borderRadius: '50%', 
                         background: 'var(--light-green)',
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center'
                       }}
-                      className="float-animation"
                     >
                       <i
-                        className={`bi ${service.icon} hover-rotate`}
-                        style={{ fontSize: '2.5rem', color: 'var(--primary-green)' }}
+                        className={`bi ${service.icon}`}
+                        style={{ fontSize: '1.8rem', color: 'var(--primary-green)' }}
                       ></i>
                     </div>
                   </div>
-                  <h4 className="mb-3 fw-bold">{service.title}</h4>
-                  <p className="text-muted mb-0">{service.description}</p>
+                  <h4 className="mb-3 fw-bold" style={{ color: 'var(--dark-green)' }}>{service.title}</h4>
+                  <p className="text-muted mb-3">{service.description}</p>
+                  <ul className="list-unstyled">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="mb-2">
+                        <i className="bi bi-check-circle-fill text-success me-2"></i>
+                        <span className="text-muted">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
@@ -110,7 +113,7 @@ const Services = () => {
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="mb-4">Ready to Get Started?</h2>
               <p className="lead mb-4">
-                Let's discuss how our services can help you achieve your sustainability goals.
+                Let's discuss how our solar-powered cooling solutions can help reduce your post-harvest losses.
               </p>
               <Link to="/contacts" className="btn btn-primary btn-lg">
                 Contact Us
@@ -124,4 +127,3 @@ const Services = () => {
 }
 
 export default Services
-

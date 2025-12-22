@@ -5,42 +5,32 @@ const CoreValues = () => {
   useEffect(() => {
     initScrollAnimations()
   }, [])
+
   const values = [
     {
-      title: 'Sustainability',
-      description:
-        'We are committed to environmental stewardship and creating solutions that benefit both business and the planet.',
-      icon: 'bi-leaf-fill',
-    },
-    {
       title: 'Innovation',
-      description:
-        'We continuously explore new technologies and approaches to stay at the forefront of green solutions.',
+      description: 'Creating cutting-edge solutions for African agriculture',
       icon: 'bi-lightbulb-fill',
     },
     {
-      title: 'Integrity',
-      description:
-        'Honesty, transparency, and ethical practices guide all our business relationships and operations.',
-      icon: 'bi-shield-check-fill',
+      title: 'Sustainability',
+      description: 'Commitment to eco-friendly, renewable energy',
+      icon: 'bi-leaf-fill',
     },
     {
-      title: 'Excellence',
-      description:
-        'We strive for the highest quality in everything we do, delivering exceptional results for our clients.',
-      icon: 'bi-star-fill',
-    },
-    {
-      title: 'Collaboration',
-      description:
-        'We believe in working together with clients, partners, and communities to achieve shared goals.',
+      title: 'Accessibility',
+      description: 'Making technology affordable for all farmers',
       icon: 'bi-people-fill',
     },
     {
       title: 'Impact',
-      description:
-        'We measure success not just by profit, but by the positive environmental and social impact we create.',
+      description: 'Driving measurable improvements in farmer livelihoods',
       icon: 'bi-heart-fill',
+    },
+    {
+      title: 'Community',
+      description: 'Building partnerships and local capacity',
+      icon: 'bi-shield-check-fill',
     },
   ]
 
@@ -67,19 +57,62 @@ const CoreValues = () => {
         </div>
       </section>
 
-      {/* Values Grid */}
-      <section className="section-padding">
+      {/* Mission and Values Section */}
+      <section className="section-padding" style={{ background: 'var(--primary-green)' }}>
         <div className="container">
+          <div className="row g-4">
+            <div className="col-md-6">
+              <div className="card p-5 h-100" style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '20px'
+              }}>
+                <h2 className="mb-4 text-white fw-bold">Our Mission</h2>
+                <p className="text-white" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  To empower African smallholder farmers with sustainable, affordable cooling technology that reduces post-harvest losses, increases farmer income, improves food security, and promotes environmental sustainability through clean energy solutions.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="card p-5 h-100" style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '20px'
+              }}>
+                <h2 className="mb-4 text-white fw-bold">Core Values</h2>
+                <ul className="list-unstyled">
+                  {values.map((value, index) => (
+                    <li key={index} className="mb-3">
+                      <div className="d-flex align-items-start">
+                        <span className="me-3" style={{ color: '#ffffff', fontSize: '0.6rem' }}>◆</span>
+                        <div>
+                          <strong className="text-white d-block mb-1">{value.title}</strong>
+                          <span className="text-white-50" style={{ fontSize: '0.95rem' }}>{value.description}</span>
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Values Grid */}
+      <section className="section-padding bg-light">
+        <div className="container">
           <div className="row g-4">
             {values.map((value, index) => (
               <div key={index} className="col-md-6 col-lg-4">
-                <div className={`card p-5 h-100 text-center animate-on-scroll animate-on-scroll-delay-${index + 1} hover-lift`}>
-                  <div className="mb-4">
+                <div className={`card p-4 h-100 text-center animate-on-scroll animate-on-scroll-delay-${index + 1} hover-lift`}>
+                  <div className="mb-3">
                     <div 
                       style={{ 
-                        width: '80px', 
-                        height: '80px', 
+                        width: '70px', 
+                        height: '70px', 
                         borderRadius: '50%', 
                         background: 'var(--light-green)',
                         display: 'inline-flex',
@@ -89,35 +122,15 @@ const CoreValues = () => {
                     >
                       <i
                         className={`bi ${value.icon}`}
-                        style={{ fontSize: '2.5rem', color: 'var(--primary-green)' }}
+                        style={{ fontSize: '2rem', color: 'var(--primary-green)' }}
                       ></i>
                     </div>
                   </div>
-                  <h4 className="mb-3 fw-bold">{value.title}</h4>
+                  <h4 className="mb-3 fw-bold" style={{ color: 'var(--dark-green)' }}>{value.title}</h4>
                   <p className="text-muted mb-0">{value.description}</p>
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="row mt-5">
-            <div className="col-lg-10 mx-auto">
-              <div className="card p-5" style={{ backgroundColor: 'rgba(220, 252, 231, 0.8)', backdropFilter: 'blur(10px)' }}>
-                <h3 className="mb-4 text-center" style={{ color: 'var(--dark-green)' }}>
-                  Living Our Values
-                </h3>
-                <p className="lead text-center mb-4">
-                  These core values aren't just words on a page—they're the foundation of our
-                  company culture and the driving force behind every project we undertake. We
-                  integrate these principles into our daily operations, decision-making
-                  processes, and client relationships.
-                </p>
-                <p className="text-center mb-0">
-                  When you work with GreenNov Africa Ltd, you're partnering with a company that's
-                  genuinely committed to making a positive difference in the world.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -126,4 +139,3 @@ const CoreValues = () => {
 }
 
 export default CoreValues
-

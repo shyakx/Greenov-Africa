@@ -111,8 +111,7 @@ const Contacts = () => {
                   fontSize: '1rem',
                   lineHeight: '1.7'
                 }}>
-                  Whether you're looking to reduce your carbon footprint, implement renewable
-                  energy solutions, or achieve sustainability certifications, we're here to help.
+                  Whether you're a farmer looking to reduce post-harvest losses, a vendor seeking to extend produce shelf life, or a community interested in solar-powered cooling solutions, we're here to help.
                 </p>
                 <ul className="list-unstyled">
                   <li className="mb-3" style={{ 
@@ -120,28 +119,28 @@ const Contacts = () => {
                     fontSize: '1rem'
                   }}>
                     <i className="bi bi-check-circle-fill me-2" style={{ color: '#22c55e', fontSize: '1.2rem' }}></i>
-                    Free initial consultation
+                    Free consultation on solar-powered cooling solutions
                   </li>
                   <li className="mb-3" style={{ 
                     color: 'rgba(255, 255, 255, 0.9)',
                     fontSize: '1rem'
                   }}>
                     <i className="bi bi-check-circle-fill me-2" style={{ color: '#22c55e', fontSize: '1.2rem' }}></i>
-                    Customized solutions for your needs
+                    Customized cooling solutions for your farm or market
                   </li>
                   <li className="mb-3" style={{ 
                     color: 'rgba(255, 255, 255, 0.9)',
                     fontSize: '1rem'
                   }}>
                     <i className="bi bi-check-circle-fill me-2" style={{ color: '#22c55e', fontSize: '1.2rem' }}></i>
-                    Expert guidance and support
+                    Comprehensive farmer training programs
                   </li>
                   <li style={{ 
                     color: 'rgba(255, 255, 255, 0.9)',
                     fontSize: '1rem'
                   }}>
                     <i className="bi bi-check-circle-fill me-2" style={{ color: '#22c55e', fontSize: '1.2rem' }}></i>
-                    Proven track record of success
+                    Proven results: up to 60% reduction in post-harvest losses
                   </li>
                 </ul>
               </div>
@@ -159,8 +158,7 @@ const Contacts = () => {
                 fontSize: '1.1rem',
                 lineHeight: '1.6'
               }}>
-                Have a question or want to learn more about our services? We'd love to hear
-                from you.
+                Have a question about our solar-powered cooling solutions or farmer training programs? We'd love to hear from you.
               </p>
 
               <div className="mb-4 animate-on-scroll animate-on-scroll-delay-1">

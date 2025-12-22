@@ -1,6 +1,27 @@
 import React from 'react'
 
 const Problem = () => {
+  const problems = [
+    {
+      title: 'Lack of Electricity Access',
+      statistic: '42.6%',
+      description: 'of people in Rwanda lack connection to the national grid, making traditional refrigeration impossible for rural farmers.',
+      color: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)'
+    },
+    {
+      title: 'Massive Post-Harvest Losses',
+      statistic: '30-40%',
+      description: 'of total fruits and vegetables are lost in Rwanda due to inadequate storage facilities and poor handling practices.',
+      color: 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)'
+    },
+    {
+      title: 'Regional Food Waste Crisis',
+      statistic: '45-65%',
+      description: 'of fresh produce in Sub-Saharan Africa is lost before consumption, threatening food security and farmer livelihoods.',
+      color: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'
+    },
+  ]
+
   return (
     <div>
       {/* Hero Section */}
@@ -24,56 +45,24 @@ const Problem = () => {
       {/* Content Section */}
       <section className="section-padding">
         <div className="container">
-          <div className="row mb-5">
-            <div className="col-lg-10 mx-auto">
-              <h2 className="mb-4 text-center" style={{ color: 'var(--dark-green)' }}>
-                Environmental Challenges We Face
-              </h2>
-              <p className="lead mb-4 text-center">
-                Our planet is facing unprecedented environmental challenges that require
-                immediate action and innovative solutions.
-              </p>
-            </div>
-          </div>
-
           <div className="row g-4">
-            <div className="col-md-6">
-              <div className="card p-4 h-100 border-start border-4 border-danger">
-                <h4 className="mb-3">Climate Change</h4>
-                <p>
-                  Rising global temperatures, extreme weather events, and changing climate
-                  patterns threaten ecosystems and communities worldwide. We need sustainable
-                  solutions to reduce greenhouse gas emissions.
-                </p>
+            {problems.map((problem, index) => (
+              <div key={index} className="col-md-4">
+                <div className="card p-4 h-100 text-white" style={{
+                  background: problem.color,
+                  borderRadius: '16px',
+                  boxShadow: '0 8px 25px rgba(0,0,0,0.2)'
+                }}>
+                  <h4 className="mb-3 fw-bold">{problem.title}</h4>
+                  <div className="mb-3" style={{ fontSize: '3rem', fontWeight: '700', lineHeight: '1' }}>
+                    {problem.statistic}
+                  </div>
+                  <p className="mb-0" style={{ fontSize: '0.95rem', lineHeight: '1.6' }}>
+                    {problem.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card p-4 h-100 border-start border-4 border-warning">
-                <h4 className="mb-3">Resource Depletion</h4>
-                <p>
-                  Non-renewable resources are being consumed at an unsustainable rate. We must
-                  transition to renewable energy sources and circular economy models.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card p-4 h-100 border-start border-4 border-info">
-                <h4 className="mb-3">Pollution</h4>
-                <p>
-                  Air, water, and soil pollution continue to harm human health and
-                  biodiversity. Effective waste management and pollution control are essential.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card p-4 h-100 border-start border-4 border-success">
-                <h4 className="mb-3">Biodiversity Loss</h4>
-                <p>
-                  Species extinction rates are accelerating due to habitat destruction and
-                  environmental degradation. Conservation efforts are critical.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="row mt-5">
@@ -83,29 +72,28 @@ const Problem = () => {
                   Our Solution
                 </h3>
                 <p className="lead mb-3">
-                  GreenNov Africa Ltd addresses these challenges through innovative, practical, and
-                  scalable solutions. We help businesses and communities:
+                  GreenNov Africa Ltd addresses these challenges through solar-powered cooling technology that helps farmers:
                 </p>
                 <ul className="list-unstyled">
                   <li className="mb-2">
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Reduce carbon emissions and environmental impact
+                    Reduce post-harvest losses by up to 60%
                   </li>
                   <li className="mb-2">
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Implement renewable energy systems
+                    Extend produce shelf life significantly
                   </li>
                   <li className="mb-2">
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Optimize resource usage and minimize waste
+                    Operate without grid electricity using 100% solar power
                   </li>
                   <li className="mb-2">
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Adopt sustainable business practices
+                    Improve food security and farmer livelihoods
                   </li>
                   <li>
                     <i className="bi bi-check-circle-fill text-success me-2"></i>
-                    Achieve environmental compliance and certifications
+                    Access affordable, low-maintenance cooling technology
                   </li>
                 </ul>
               </div>
@@ -118,4 +106,3 @@ const Problem = () => {
 }
 
 export default Problem
-
