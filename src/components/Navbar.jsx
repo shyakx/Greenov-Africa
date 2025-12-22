@@ -9,14 +9,14 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/who-we-are', label: 'Who We Are' },
-    { path: '/problem', label: 'The Problem' },
-    { path: '/services', label: 'Our Services' },
-    { path: '/core-values', label: 'Core Values' },
-    { path: '/impact', label: 'Our Impact' },
+    { path: '/who-we-are', label: 'About' },
+    { path: '/problem', label: 'Problem' },
+    { path: '/services', label: 'Services' },
+    { path: '/core-values', label: 'Values' },
+    { path: '/impact', label: 'Impact' },
     { path: '/gallery', label: 'Gallery' },
-    { path: '/team', label: 'Meet Our Team' },
-    { path: '/contacts', label: 'Contacts' },
+    { path: '/team', label: 'Team' },
+    { path: '/contacts', label: 'Contact' },
   ]
 
   return (
@@ -46,7 +46,7 @@ const Navbar = () => {
               e.currentTarget.style.transform = 'scale(1)';
             }}
           />
-          <span style={{ color: 'var(--primary-green)', fontSize: '1.12rem' }}>
+          <span style={{ color: 'var(--primary-green)', fontSize: '1rem', fontWeight: '600' }}>
             GreenNov Africa Ltd
           </span>
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-center">
+          <ul className="navbar-nav ms-auto align-items-center" style={{ gap: '0.25rem' }}>
             {navLinks.map((link) => (
               <li key={link.path} className="nav-item">
                 <Link
@@ -71,6 +71,9 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   style={{
                     color: isActive(link.path) ? 'var(--primary-green)' : 'var(--text-dark)',
+                    fontSize: '0.9rem',
+                    padding: '0.4rem 0.75rem !important',
+                    whiteSpace: 'nowrap'
                   }}
                 >
                   {link.label}

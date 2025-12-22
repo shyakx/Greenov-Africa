@@ -28,9 +28,10 @@ const Contacts = () => {
     setSubmitStatus({ type: '', message: '' })
 
     // EmailJS configuration
-    const serviceID = 'service_do036ib' // Your EmailJS service ID
-    const templateID = 'template_vnv5v7h' // Your EmailJS template ID
-    const publicKey = '987WIncPXtXx0lfYz' // Your EmailJS public key
+    // Using environment variables for better security (fallback to hardcoded values)
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_do036ib'
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_vnv5v7h'
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '987WIncPXtXx0lfYz'
 
     // Template parameters
     const templateParams = {

@@ -225,82 +225,59 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Column 4 - News & Updates */}
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <h6 className="mb-3 fw-bold" style={{ color: '#22c55e', fontSize: '1rem' }}>News & Updates</h6>
-              <ul className="list-unstyled">
-                <li>
-                  <a href="#" style={footerLinkStyle}
-                    onMouseEnter={(e) => handleLinkHover(e, true)}
-                    onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Blogs & News
-                  </a>
-                </li>
-                <li>
-                  <a href="#" style={footerLinkStyle}
-                    onMouseEnter={(e) => handleLinkHover(e, true)}
-                    onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Careers
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 5 - Contact & Hours */}
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <h6 className="mb-3 fw-bold" style={{ color: '#22c55e', fontSize: '1rem' }}>Contact Us</h6>
-              <ul className="list-unstyled mb-4">
-                <li className="mb-2" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                  <i className="bi bi-envelope me-2" style={{ color: '#22c55e' }}></i>
-                  greenovafrica@gmail.com
-                </li>
-                <li className="mb-2" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                  <i className="bi bi-telephone me-2" style={{ color: '#22c55e' }}></i>
-                  0789366522
-                </li>
-                <li style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                  <i className="bi bi-telephone me-2" style={{ color: '#22c55e' }}></i>
-                  0786367490
-                </li>
-              </ul>
-              
-              <h6 className="mb-3 fw-bold mt-4" style={{ color: '#22c55e', fontSize: '1rem' }}>Working Hours</h6>
-              <ul className="list-unstyled" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
-                <li className="mb-1">Mon-Fri: 9AM to 5PM</li>
-                <li className="mb-1">Saturdays: 9AM to 1PM</li>
-                <li className="mb-1">Sundays: Closed</li>
-                <li>Public holidays: 9AM to 1PM</li>
-              </ul>
-            </div>
-
-            {/* Column 6 - CTA Button */}
-            <div className="col-lg-2 col-md-4 col-sm-6">
-              <Link to="/contacts" className="btn w-100 mb-4" style={{
-                background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)',
-                color: '#ffffff',
-                borderRadius: '12px',
-                padding: '12px 20px',
-                fontWeight: '600',
-                border: 'none',
-                boxShadow: '0 4px 15px rgba(245, 158, 11, 0.3)',
-                transition: 'all 0.3s ease',
-                textDecoration: 'none',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = 'translateY(-3px)'
-                e.currentTarget.style.boxShadow = '0 6px 20px rgba(245, 158, 11, 0.5)'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = 'translateY(0)'
-                e.currentTarget.style.boxShadow = '0 4px 15px rgba(245, 158, 11, 0.3)'
-              }}>
-                <i className="bi bi-gear-fill"></i>
-                Take Action
-              </Link>
+            {/* Column 4 - Contact & CTA Combined */}
+            <div className="col-lg-6 col-md-12">
+              <div className="row g-3">
+                {/* Contact Info */}
+                <div className="col-md-6">
+                  <h6 className="mb-3 fw-bold" style={{ color: '#22c55e', fontSize: '1rem' }}>Contact Us</h6>
+                  <ul className="list-unstyled">
+                    <li className="mb-2" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      <i className="bi bi-envelope me-2" style={{ color: '#22c55e' }}></i>
+                      greenovafrica@gmail.com
+                    </li>
+                    <li className="mb-2" style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      <i className="bi bi-telephone me-2" style={{ color: '#22c55e' }}></i>
+                      0789366522
+                    </li>
+                    <li style={{ color: 'rgba(255, 255, 255, 0.8)', fontSize: '0.9rem' }}>
+                      <i className="bi bi-telephone me-2" style={{ color: '#22c55e' }}></i>
+                      0786367490
+                    </li>
+                  </ul>
+                </div>
+                
+                {/* CTA Button & Powered By */}
+                <div className="col-md-6">
+                  <h6 className="mb-3 fw-bold" style={{ color: '#22c55e', fontSize: '1rem' }}>Take Action</h6>
+                  <Link to="/contacts" className="btn w-100" style={{
+                    background: 'linear-gradient(135deg, #f59e0b 0%, #f97316 100%)',
+                    color: '#ffffff',
+                    borderRadius: '12px',
+                    padding: '12px 20px',
+                    fontWeight: '600',
+                    border: 'none',
+                    boxShadow: '0 4px 15px rgba(245, 158, 11, 0.3)',
+                    transition: 'all 0.3s ease',
+                    textDecoration: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = 'translateY(-3px)'
+                    e.currentTarget.style.boxShadow = '0 6px 20px rgba(245, 158, 11, 0.5)'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = 'translateY(0)'
+                    e.currentTarget.style.boxShadow = '0 4px 15px rgba(245, 158, 11, 0.3)'
+                  }}>
+                    <i className="bi bi-gear-fill"></i>
+                    Take Action
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -313,12 +290,17 @@ const Footer = () => {
       }}>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6 mb-2 mb-md-0">
+            <div className="col-md-4 mb-2 mb-md-0">
               <p className="mb-0" style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem' }}>
                 &copy; {currentYear} GreenNov Africa Ltd. All rights reserved.
               </p>
             </div>
-            <div className="col-md-6 text-md-end">
+            <div className="col-md-4 text-center mb-2 mb-md-0">
+              <p className="mb-0" style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.85rem' }}>
+                Powered By : <span style={{ color: '#22c55e', fontWeight: '600' }}>Cloud Sync</span>
+              </p>
+            </div>
+            <div className="col-md-4 text-md-end">
               <div className="d-flex gap-4 justify-content-md-end flex-wrap">
                 <a href="#" style={{ 
                   color: 'rgba(255, 255, 255, 0.7)', 
@@ -341,13 +323,6 @@ const Footer = () => {
                   Terms and Conditions
                 </a>
               </div>
-            </div>
-          </div>
-          <div className="row mt-2">
-            <div className="col-12 text-center">
-              <p className="mb-0" style={{ color: 'rgba(255, 255, 255, 0.6)', fontSize: '0.85rem' }}>
-                Powered By : <span style={{ color: '#22c55e', fontWeight: '500' }}>Cloud Sync</span>
-              </p>
             </div>
           </div>
         </div>
