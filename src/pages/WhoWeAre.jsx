@@ -59,37 +59,50 @@ const WhoWeAre = () => {
               }}>
                 With a commitment to excellence, we've helped numerous farmers reduce post-harvest losses by up to 60%, increase their income, and improve food security. Our mission is to make solar-powered cooling technology accessible and affordable for all farmers, especially those in off-grid communities.
               </p>
-              <div className="row g-4 mt-4">
+              
+              {/* Achievement Section */}
+              <p className="mb-4" style={{ 
+                color: 'rgba(255, 255, 255, 0.95)',
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
+                fontSize: '1rem',
+                lineHeight: '1.7',
+                textAlign: 'left'
+              }}>
+                <i className="bi bi-trophy-fill me-2" style={{ color: '#f59e0b', fontSize: '1.1rem' }}></i>
+                <strong style={{ color: '#22c55e' }}>Greenov Africa Ltd</strong> won the <strong style={{ color: '#22c55e' }}>Bronze Award</strong> in the <strong style={{ color: '#22c55e' }}>Efficiency for Access Design Challenge</strong>, a UK-based global competition focused on advancing clean energy solutions and improving energy access worldwide.
+              </p>
+
+              <div className="row g-4 mt-3">
                 <div className="col-md-6">
-                  <div className="card p-4 h-100" style={{
+                  <div className="card p-3 p-md-4 h-100" style={{
                     backgroundColor: 'rgba(0, 0, 0, 0.4)',
                     backdropFilter: 'blur(20px)',
                     border: '1px solid rgba(34, 197, 94, 0.2)',
                     borderRadius: '20px',
                     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                   }}>
-                    <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600' }}>
+                    <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600', fontSize: '1.1rem' }}>
                       <i className="bi bi-people-fill me-2"></i>
                       Our Team
                     </h5>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0' }}>
                       A diverse group of experts including solar energy engineers, agricultural specialists, post-harvest management consultants, and business strategists working together to reduce food losses and improve farmer livelihoods.
                     </p>
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="card p-4 h-100" style={{
+                  <div className="card p-3 p-md-4 h-100" style={{
                     backgroundColor: 'rgba(0, 0, 0, 0.4)',
                     backdropFilter: 'blur(20px)',
                     border: '1px solid rgba(34, 197, 94, 0.2)',
                     borderRadius: '20px',
                     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
                   }}>
-                    <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600' }}>
+                    <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600', fontSize: '1.1rem' }}>
                       <i className="bi bi-award-fill me-2"></i>
                       Our Expertise
                     </h5>
-                    <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                    <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0' }}>
                       Specialized knowledge in solar-powered cooling systems, automated evaporative cooling technology, post-harvest management, farmer training programs, and off-grid renewable energy solutions for agricultural applications.
                     </p>
                   </div>
@@ -98,51 +111,51 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className="row g-4 mt-4">
+          <div className="row g-4 mt-3">
             <div className="col-md-4">
-              <div className="card p-4 h-100" style={{
+              <div className="card p-3 p-md-4 h-100" style={{
                 backgroundColor: 'rgba(0, 0, 0, 0.4)',
                 backdropFilter: 'blur(20px)',
                 border: '1px solid rgba(34, 197, 94, 0.2)',
                 borderRadius: '20px',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
               }}>
-                <h4 className="mb-3" style={{ color: '#22c55e', fontWeight: '600' }}>
+                <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600', fontSize: '1.2rem' }}>
                   Our Mission
-                </h4>
-                <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                </h5>
+                <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0' }}>
                   To empower African smallholder farmers with sustainable, affordable cooling technology that reduces post-harvest losses, increases farmer income, improves food security, and promotes environmental sustainability through clean energy solutions.
                 </p>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card p-4 h-100" style={{
+              <div className="card p-3 p-md-4 h-100" style={{
                 backgroundColor: 'rgba(0, 0, 0, 0.4)',
                 backdropFilter: 'blur(20px)',
                 border: '1px solid rgba(34, 197, 94, 0.2)',
                 borderRadius: '20px',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
               }}>
-                <h4 className="mb-3" style={{ color: '#22c55e', fontWeight: '600' }}>
+                <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600', fontSize: '1.2rem' }}>
                   Our Vision
-                </h4>
-                <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                </h5>
+                <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0' }}>
                   A world where African farmers have access to affordable, clean energy cooling technology that eliminates post-harvest losses and ensures food security for all.
                 </p>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card p-4 h-100" style={{
+              <div className="card p-3 p-md-4 h-100" style={{
                 backgroundColor: 'rgba(0, 0, 0, 0.4)',
                 backdropFilter: 'blur(20px)',
                 border: '1px solid rgba(34, 197, 94, 0.2)',
                 borderRadius: '20px',
                 boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
               }}>
-                <h4 className="mb-3" style={{ color: '#22c55e', fontWeight: '600' }}>
+                <h5 className="mb-3" style={{ color: '#22c55e', fontWeight: '600', fontSize: '1.2rem' }}>
                   Our Values
-                </h4>
-                <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
+                </h5>
+                <p style={{ color: 'rgba(255, 255, 255, 0.9)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '0' }}>
                   Innovation, sustainability, accessibility, impact, and community guide everything we do. We're committed to reducing post-harvest losses and improving farmer livelihoods.
                 </p>
               </div>
