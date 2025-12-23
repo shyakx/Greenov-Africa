@@ -14,7 +14,9 @@ const Team = () => {
       name: 'DUSHIMIMANA Olivier',
       role: 'Co-Founder',
       image: '/Staff images/Olivier.jpeg',
-      placeholder: 'https://via.placeholder.com/300x300/22c55e/ffffff?text=Olivier'
+      placeholder: 'https://via.placeholder.com/300x300/22c55e/ffffff?text=Olivier',
+      email: 'dushimimanaolivier4@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/dushimimana-olivier-35266a1b5'
     },
     {
       name: 'HATANGIMBABAZI ISHIMWE Divine',
