@@ -297,7 +297,7 @@ const Home = () => {
                 <div className="text-center mb-4">
                   <h4 className="mb-3 fw-bold" style={{ color: '#22c55e' }}>
                     <i className="bi bi-calendar-event-fill me-2"></i>
-                    Rwanda Agrishow 2018
+                    Rwanda Agrishow 18
                   </h4>
                 </div>
                 <div className="mb-4" style={{
@@ -309,7 +309,7 @@ const Home = () => {
                 }}>
                   <img
                     src="/Images to add on homepage/Rwanda agrishow 18.jpeg"
-                    alt="Greenov Africa at Rwanda Agrishow 2018"
+                    alt="Greenov Africa at Rwanda Agrishow 18"
                     className="w-100 h-100"
                     style={{
                       objectFit: 'cover',
@@ -324,7 +324,7 @@ const Home = () => {
                   marginBottom: '0',
                   textAlign: 'center'
                 }}>
-                  <strong style={{ color: '#22c55e' }}>Greenov Africa</strong> participated in the <strong style={{ color: '#22c55e' }}>Rwanda Agrishow 2018</strong>, showcasing our innovative solar-powered cooling solutions to farmers and agricultural stakeholders.
+                  <strong style={{ color: '#22c55e' }}>Greenov Africa</strong> participated in the <strong style={{ color: '#22c55e' }}>Rwanda Agrishow 18</strong>, showcasing our innovative solar-powered cooling solutions to farmers and agricultural stakeholders.
                 </p>
               </div>
             </div>
