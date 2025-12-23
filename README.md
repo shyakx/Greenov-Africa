@@ -87,8 +87,8 @@ greenov-ltd/
 
 This project is maintained and developed by the GREENOV LTD team:
 
-- **[NDAYISABA PATRICK]** - [Chief Executive Officer] - [image.png]
-- **[DUSHIMIMNA Olivier]** - [Director Of Research and ] - [Brief description or responsibilities]
+- **[NDAYISABA PATRICK]** - [Founder and CEO] - [image.png]
+- **[DUSHIMIMANA Olivier]** - [Co-Founder] - [Brief description or responsibilities]
 - **[Team Member Name]** - [Role/Title] - [Brief description or responsibilities]
 
 *Please update this section with your actual team members and their roles.*

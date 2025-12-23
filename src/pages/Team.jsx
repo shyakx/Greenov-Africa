@@ -12,7 +12,7 @@ const Team = () => {
     },
     {
       name: 'DUSHIMIMANA Olivier',
-      role: 'Director of Research and Development',
+      role: 'Co-Founder',
       image: '/Staff images/Olivier.jpeg',
       placeholder: 'https://via.placeholder.com/300x300/22c55e/ffffff?text=Olivier'
     },
