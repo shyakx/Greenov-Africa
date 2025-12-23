@@ -11,12 +11,12 @@ const Services = () => {
     {
       title: 'Solar-Powered Cooling Solution',
       description:
-        'Our flagship automated solar-powered fresh produce cooling appliance is specifically designed for off-grid farming communities. This stationary cooling system provides reliable, all-day temperature control to dramatically extend the shelf life of fruits and vegetables.',
+        'Our flagship automated solar-powered fresh produce cooling appliance is specifically designed for off-grid farming communities. Available in both portable and stationary configurations, this cooling system provides reliable, all-day temperature control to dramatically extend the shelf life of fruits and vegetables.',
       icon: 'bi-thermometer-half',
       features: [
         '100% solar-powered with no grid electricity required',
-        'Automated evaporative cooling technology',
-        'Stationary design for farm and market installations',
+        'Portable and Automated evaporative cooling technology',
+        'Portable and stationary design options for farm and market installations',
         'Zero fuel costs and emissions',
         'Low maintenance requirements',
         'Smart automation for optimal temperature control',
@@ -90,12 +90,12 @@ const Services = () => {
                     </div>
                   </div>
                   <h4 className="mb-3 fw-bold" style={{ color: 'var(--dark-green)' }}>{service.title}</h4>
-                  <p className="text-muted mb-3">{service.description}</p>
+                  <p className="text-muted mb-3" style={{ fontSize: '1rem', lineHeight: '1.6' }}>{service.description}</p>
                   <ul className="list-unstyled">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="mb-2">
                         <i className="bi bi-check-circle-fill text-success me-2"></i>
-                        <span className="text-muted">{feature}</span>
+                        <span className="text-muted" style={{ fontSize: '1rem', lineHeight: '1.6' }}>{feature}</span>
                       </li>
                     ))}
                   </ul>

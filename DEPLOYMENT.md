@@ -1,4 +1,4 @@
-# Deployment Guide for GREENOV LTD Website
+# Deployment Guide for Greenov Africa Website
 
 ## Quick Deployment Options
 

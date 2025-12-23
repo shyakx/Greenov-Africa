@@ -72,7 +72,7 @@ const Problem = () => {
                   Our Solution
                 </h3>
                 <p className="lead mb-3">
-                  GreenNov Africa Ltd addresses these challenges through solar-powered cooling technology that helps farmers:
+                  Greenov Africa addresses these challenges through solar-powered cooling technology that helps farmers:
                 </p>
                 <ul className="list-unstyled">
                   <li className="mb-2">

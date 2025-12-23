@@ -39,7 +39,7 @@ const WhoWeAre = () => {
                 lineHeight: '1.7',
                 textAlign: 'left'
               }}>
-                GreenNov Africa Ltd was founded with a vision to empower African smallholder farmers with sustainable, affordable cooling technology. We specialize in reducing post-harvest losses through clean energy solutions.
+                Greenov Africa was founded with a vision to empower African smallholder farmers with sustainable, affordable cooling technology. We specialize in reducing post-harvest losses through clean energy solutions.
               </p>
               <p className="mb-4" style={{ 
                 color: 'rgba(255, 255, 255, 0.95)',

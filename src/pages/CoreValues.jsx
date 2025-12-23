@@ -15,7 +15,7 @@ const CoreValues = () => {
     {
       title: 'Sustainability',
       description: 'Commitment to eco-friendly, renewable energy',
-      icon: 'bi-leaf-fill',
+      icon: 'bi-flower1',
     },
     {
       title: 'Accessibility',
@@ -30,7 +30,7 @@ const CoreValues = () => {
     {
       title: 'Community',
       description: 'Building partnerships and local capacity',
-      icon: 'bi-shield-check-fill',
+      icon: 'bi-shield-fill',
     },
   ]
 
@@ -86,7 +86,21 @@ const CoreValues = () => {
                   {values.map((value, index) => (
                     <li key={index} className="mb-3">
                       <div className="d-flex align-items-start">
-                        <span className="me-3" style={{ color: '#ffffff', fontSize: '0.6rem' }}>◆</span>
+                        <div className="me-3" style={{
+                          width: '40px',
+                          height: '40px',
+                          borderRadius: '50%',
+                          background: 'rgba(255, 255, 255, 0.2)',
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          flexShrink: 0
+                        }}>
+                          <i
+                            className={`bi ${value.icon}`}
+                            style={{ fontSize: '1.2rem', color: '#ffffff' }}
+                          ></i>
+                        </div>
                         <div>
                           <strong className="text-white d-block mb-1">{value.title}</strong>
                           <span className="text-white-50" style={{ fontSize: '0.95rem' }}>{value.description}</span>
@@ -117,12 +131,20 @@ const CoreValues = () => {
                         background: 'var(--light-green)',
                         display: 'inline-flex',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        boxShadow: '0 2px 8px rgba(22, 163, 74, 0.2)',
+                        border: '2px solid rgba(21, 128, 61, 0.2)'
                       }}
                     >
                       <i
                         className={`bi ${value.icon}`}
-                        style={{ fontSize: '2rem', color: 'var(--primary-green)' }}
+                        style={{ 
+                          fontSize: '2.5rem', 
+                          color: '#0f5132',
+                          lineHeight: '1',
+                          display: 'block'
+                        }}
+                        aria-hidden="true"
                       ></i>
                     </div>
                   </div>

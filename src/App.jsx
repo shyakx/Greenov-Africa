@@ -8,9 +8,9 @@ import Problem from './pages/Problem'
 import Services from './pages/Services'
 import CoreValues from './pages/CoreValues'
 import Impact from './pages/Impact'
-import Gallery from './pages/Gallery'
 import Contacts from './pages/Contacts'
 import Team from './pages/Team'
+import FAQ from './pages/FAQ'
 import { initScrollAnimations } from './utils/animations'
 
 function ScrollToTop() {
@@ -45,9 +45,9 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/core-values" element={<CoreValues />} />
           <Route path="/impact" element={<Impact />} />
-          <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
         <Footer />
       </div>

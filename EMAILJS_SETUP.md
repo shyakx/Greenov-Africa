@@ -38,7 +38,7 @@ Message:
 {{message}}
 
 ---
-This email was sent from the GREENOV LTD website contact form.
+This email was sent from the Greenov Africa website contact form.
 ```
 
 **Content (HTML Version):**
@@ -133,7 +133,7 @@ Copy and paste this HTML into the EmailJS template editor:
       <h1>New Contact Form Message</h1>
     </div>
     
-    <p style="color: #6b7280; margin-bottom: 25px;">You have received a new message from your GREENOV LTD website contact form.</p>
+    <p style="color: #6b7280; margin-bottom: 25px;">You have received a new message from your Greenov Africa website contact form.</p>
     
     <div class="info-section">
       <div>
@@ -156,7 +156,7 @@ Copy and paste this HTML into the EmailJS template editor:
     </div>
     
     <div class="footer">
-      <p>This email was sent from the GREENOV LTD website contact form.</p>
+      <p>This email was sent from the Greenov Africa website contact form.</p>
       <p>Please reply directly to {{from_email}} to respond to this inquiry.</p>
     </div>
   </div>

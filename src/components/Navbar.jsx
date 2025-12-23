@@ -14,7 +14,6 @@ const Navbar = () => {
     { path: '/services', label: 'Services' },
     { path: '/core-values', label: 'Values' },
     { path: '/impact', label: 'Impact' },
-    { path: '/gallery', label: 'Gallery' },
     { path: '/team', label: 'Team' },
     { path: '/contacts', label: 'Contact' },
   ]
@@ -29,7 +28,7 @@ const Navbar = () => {
         >
           <img 
             src="/logo.jpeg" 
-            alt="GreenNov Africa Ltd Logo" 
+            alt="Greenov Africa Logo" 
             style={{ 
               height: '40px', 
               width: '40px',
@@ -47,7 +46,7 @@ const Navbar = () => {
             }}
           />
           <span style={{ color: 'var(--primary-green)', fontSize: '1rem', fontWeight: '600' }}>
-            GreenNov Africa Ltd
+            Greenov Africa
           </span>
         </Link>
         <button

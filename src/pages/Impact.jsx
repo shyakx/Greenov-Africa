@@ -86,7 +86,7 @@ const Impact = () => {
                 Creating Lasting Change
               </h2>
               <p className="lead mb-4 text-center" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                At GreenNov Africa Ltd, we measure our success by the reduction in post-harvest losses, 
+                At Greenov Africa, we measure our success by the reduction in post-harvest losses, 
                 improvement in farmer income, and increase in food security we create for farming communities.
               </p>
             </div>

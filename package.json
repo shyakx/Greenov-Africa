@@ -1,7 +1,7 @@
 {
   "name": "greenov-ltd",
   "version": "1.0.0",
-  "description": "GREENOV LTD Website",
+  "description": "Greenov Africa Website",
   "type": "module",
   "scripts": {
     "dev": "vite",

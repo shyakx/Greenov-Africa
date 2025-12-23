@@ -58,7 +58,7 @@ const Team = () => {
                 Meet Our Team
               </h1>
               <p className="lead" style={{ fontSize: 'clamp(0.9rem, 1.5vw, 1.1rem)' }}>
-                The passionate professionals driving GREENOV LTD forward
+                The passionate professionals driving Greenov Africa forward
               </p>
             </div>
           </div>

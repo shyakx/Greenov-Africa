@@ -1,6 +1,6 @@
-# GREENOV LTD Website
+# Greenov Africa Website
 
-A modern, responsive website built with React and Bootstrap for GREENOV LTD - a company focused on green and sustainable solutions.
+A modern, responsive website built with React and Bootstrap for Greenov Africa - a company focused on green and sustainable solutions.
 
 ## Features
 
@@ -85,7 +85,7 @@ greenov-ltd/
 
 ## Team
 
-This project is maintained and developed by the GREENOV LTD team:
+This project is maintained and developed by the Greenov Africa team:
 
 - **[NDAYISABA PATRICK]** - [Founder and CEO] - [image.png]
 - **[DUSHIMIMANA Olivier]** - [Co-Founder] - [Brief description or responsibilities]

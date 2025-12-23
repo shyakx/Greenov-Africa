@@ -48,7 +48,7 @@ const Footer = () => {
                   }}>
                     <img 
                       src="/logo.jpeg" 
-                      alt="GreenNov Africa Ltd Logo" 
+                      alt="Greenov Africa Logo" 
                       style={{ 
                         height: '100%', 
                         width: '100%',
@@ -64,7 +64,7 @@ const Footer = () => {
                   fontWeight: '600',
                   color: 'rgba(255, 255, 255, 0.9)'
                 }}>
-                  GreenNov Africa Ltd
+                  Greenov Africa
                 </span>
               </div>
             </div>
@@ -104,28 +104,40 @@ const Footer = () => {
               <h6 className="mb-3 fw-bold" style={{ color: '#22c55e', fontSize: '1rem' }}>Our Services</h6>
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/services" style={footerLinkStyle}
+                  <Link 
+                    to="/services" 
+                    style={footerLinkStyle}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Solar-Powered Cooling
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" style={footerLinkStyle}
+                  <Link 
+                    to="/services" 
+                    style={footerLinkStyle}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Farmer Training Programs
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" style={footerLinkStyle}
+                  <Link 
+                    to="/services" 
+                    style={footerLinkStyle}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Post-Harvest Management
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" style={footerLinkStyle}
+                  <Link 
+                    to="/services" 
+                    style={footerLinkStyle}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Off-Grid Solutions
@@ -160,13 +172,6 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gallery" style={footerLinkStyle}
-                    onMouseEnter={(e) => handleLinkHover(e, true)}
-                    onMouseLeave={(e) => handleLinkHover(e, false)}>
-                    Gallery
-                  </Link>
-                </li>
-                <li>
                   <Link to="/problem" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
@@ -188,25 +193,25 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="#" style={footerLinkStyle}
+                  <Link to="/faq" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     FAQ
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" style={footerLinkStyle}
+                  <Link to="/contacts" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Report an Issue
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" style={footerLinkStyle}
+                  <Link to="/contacts" style={footerLinkStyle}
                     onMouseEnter={(e) => handleLinkHover(e, true)}
                     onMouseLeave={(e) => handleLinkHover(e, false)}>
                     Request Callback
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -278,7 +283,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-md-4 mb-2 mb-md-0">
               <p className="mb-0" style={{ color: 'rgba(255, 255, 255, 0.7)', fontSize: '0.9rem' }}>
-                &copy; {currentYear} GreenNov Africa Ltd. All rights reserved.
+                &copy; {currentYear} Greenov Africa. All rights reserved.
               </p>
             </div>
             <div className="col-md-4 text-center mb-2 mb-md-0">

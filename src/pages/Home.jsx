@@ -58,7 +58,7 @@ const Home = () => {
                 }}></div>
                 <img 
                   src="/logo.jpeg" 
-                  alt="GreenNov Africa Ltd Logo" 
+                  alt="Greenov Africa Logo" 
                   className="position-relative float-animation"
                   style={{ 
                     height: '80px', 
@@ -81,7 +81,7 @@ const Home = () => {
                 Welcome to <span style={{
                   color: '#dcfce7',
                   textShadow: '0 2px 10px rgba(0,0,0,0.2)'
-                }}>GreenNov Africa Ltd</span>
+                }}>Greenov Africa</span>
               </h1>
               <p className="lead mb-4" style={{ 
                 fontSize: 'clamp(0.8rem, 1.44vw, 0.96rem)', 
@@ -123,7 +123,7 @@ const Home = () => {
       <section className="section-padding bg-light">
         <div className="container">
           <div className="section-title-wrapper animate-on-scroll">
-            <h2 className="section-title">Why Choose GreenNov Africa Ltd?</h2>
+            <h2 className="section-title">Why Choose Greenov Africa?</h2>
           </div>
           <p className="section-subtitle animate-on-scroll animate-on-scroll-delay-1">
             We provide solar-powered cooling solutions that reduce post-harvest losses and empower farmers with clean energy technology
@@ -152,7 +152,7 @@ const Home = () => {
                     }}
                     className="float-animation"
                   >
-                    <i className="bi bi-leaf-fill" style={{ fontSize: '2.4rem', color: 'white' }}></i>
+                    <i className="bi bi-sun-fill" style={{ fontSize: '2.4rem', color: 'white' }}></i>
                   </div>
                 </div>
                 <h4 className="mb-3 fw-bold" style={{
@@ -230,6 +230,101 @@ const Home = () => {
                 }}>Farmer Training</h4>
                 <p className="text-muted mb-0">
                   Comprehensive training programs to ensure farmers maximize benefits of our cooling technology and improve post-harvest management.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Event Section */}
+      <section className="section-padding">
+        <div className="container">
+          <div className="row g-4">
+            {/* CEO and Divine at Festival of Cooling */}
+            <div className="col-lg-6">
+              <div className="card p-4 p-md-5 animate-on-scroll h-100" style={{
+                backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(34, 197, 94, 0.2)',
+                borderRadius: '20px',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+              }}>
+                <div className="text-center mb-4">
+                  <h4 className="mb-3 fw-bold" style={{ color: '#22c55e' }}>
+                    <i className="bi bi-trophy-fill me-2"></i>
+                    Recent Achievement
+                  </h4>
+                </div>
+                <div className="mb-4" style={{
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3)',
+                  height: '350px',
+                  width: '100%'
+                }}>
+                  <img
+                    src="/Images to add on homepage/CEO and Divine.jpeg"
+                    alt="Patrick Ndayisaba and Hatangimbabazi Divine at Festival of Cooling"
+                    className="w-100 h-100"
+                    style={{
+                      objectFit: 'cover',
+                      display: 'block'
+                    }}
+                  />
+                </div>
+                <p style={{ 
+                  color: 'rgba(255, 255, 255, 0.95)', 
+                  fontSize: '1rem',
+                  lineHeight: '1.7',
+                  marginBottom: '0',
+                  textAlign: 'center'
+                }}>
+                  <strong style={{ color: '#22c55e' }}>Patrick Ndayisaba</strong> and <strong style={{ color: '#22c55e' }}>Hatangimbabazi Divine</strong> represented <strong style={{ color: '#22c55e' }}>Greenov Africa</strong> at the <strong style={{ color: '#22c55e' }}>#FestivalofCooling</strong> held at the <strong style={{ color: '#22c55e' }}>Africa Centre of Excellence for Sustainable Cooling and Cold Chain (ACES)</strong>.
+                </p>
+              </div>
+            </div>
+            
+            {/* Rwanda Agrishow */}
+            <div className="col-lg-6">
+              <div className="card p-4 p-md-5 animate-on-scroll h-100" style={{
+                backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(34, 197, 94, 0.2)',
+                borderRadius: '20px',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)'
+              }}>
+                <div className="text-center mb-4">
+                  <h4 className="mb-3 fw-bold" style={{ color: '#22c55e' }}>
+                    <i className="bi bi-calendar-event-fill me-2"></i>
+                    Rwanda Agrishow 2018
+                  </h4>
+                </div>
+                <div className="mb-4" style={{
+                  borderRadius: '15px',
+                  overflow: 'hidden',
+                  boxShadow: '0 4px 16px rgba(0, 0, 0, 0.3)',
+                  height: '350px',
+                  width: '100%'
+                }}>
+                  <img
+                    src="/Images to add on homepage/Rwanda agrishow 18.jpeg"
+                    alt="Greenov Africa at Rwanda Agrishow 2018"
+                    className="w-100 h-100"
+                    style={{
+                      objectFit: 'cover',
+                      display: 'block'
+                    }}
+                  />
+                </div>
+                <p style={{ 
+                  color: 'rgba(255, 255, 255, 0.95)', 
+                  fontSize: '1rem',
+                  lineHeight: '1.7',
+                  marginBottom: '0',
+                  textAlign: 'center'
+                }}>
+                  <strong style={{ color: '#22c55e' }}>Greenov Africa</strong> participated in the <strong style={{ color: '#22c55e' }}>Rwanda Agrishow 2018</strong>, showcasing our innovative solar-powered cooling solutions to farmers and agricultural stakeholders.
                 </p>
               </div>
             </div>
