@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.greenovafrica.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent overloading server)
+Crawl-delay: 1
+
