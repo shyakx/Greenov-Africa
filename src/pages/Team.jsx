@@ -12,7 +12,7 @@ const Team = () => {
     },
     {
       name: 'DUSHIMIMANA Olivier',
-      role: 'Co-Founder',
+      role: 'Co-Founder and Director of Research and Development',
       image: '/Staff images/Olivier.jpeg',
       placeholder: 'https://via.placeholder.com/300x300/22c55e/ffffff?text=Olivier',
       email: 'dushimimanaolivier4@gmail.com',

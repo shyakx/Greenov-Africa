@@ -88,7 +88,7 @@ greenov-ltd/
 This project is maintained and developed by the Greenov Africa team:
 
 - **[NDAYISABA PATRICK]** - [Founder and CEO] - [image.png]
-- **[DUSHIMIMANA Olivier]** - [Co-Founder] - [Brief description or responsibilities]
+- **[DUSHIMIMANA Olivier]** - [Co-Founder and Director of Research and Development] - [Co-Founder and his responsibilities of being Director Research and Development]
 - **[Team Member Name]** - [Role/Title] - [Brief description or responsibilities]
 
 *Please update this section with your actual team members and their roles.*
