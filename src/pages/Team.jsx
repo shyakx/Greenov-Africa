@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Team = () => {
   const teamMembers = [
@@ -37,6 +37,48 @@ const Team = () => {
       placeholder: 'https://via.placeholder.com/300x300/22c55e/ffffff?text=Pamela'
     }
   ]
+
+  // Add structured data for SEO
+  useEffect(() => {
+    const baseUrl = 'https://www.greenovafrica.com'
+    
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Greenov Africa Ltd",
+      "url": baseUrl,
+      "logo": `${baseUrl}/logo.jpeg`,
+      "employee": teamMembers.map(member => ({
+        "@type": "Person",
+        "name": member.name,
+        "jobTitle": member.role,
+        "image": member.image.startsWith('/') ? `${baseUrl}${member.image}` : member.image,
+        ...(member.email && { "email": member.email }),
+        ...(member.linkedin && { "sameAs": [member.linkedin] })
+      }))
+    }
+
+    // Remove existing script if any
+    const existingScript = document.getElementById('team-structured-data')
+    if (existingScript) {
+      existingScript.remove()
+    }
+
+    // Add new script
+    const script = document.createElement('script')
+    script.id = 'team-structured-data'
+    script.type = 'application/ld+json'
+    script.text = JSON.stringify(structuredData)
+    document.head.appendChild(script)
+
+    // Cleanup
+    return () => {
+      const scriptToRemove = document.getElementById('team-structured-data')
+      if (scriptToRemove) {
+        scriptToRemove.remove()
+      }
+    }
+  }, [])
 
   const handleImageError = (e, placeholder) => {
     e.target.src = placeholder
