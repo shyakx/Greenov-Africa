@@ -17,10 +17,17 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.greenovafrica.com/" />
     
-    <!-- Favicon and App Icons -->
-    <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
+    <!-- Site Logo for Search Engines -->
+    <meta name="logo" content="https://www.greenovafrica.com/logo.jpeg" />
+    
+    <!-- Favicon and App Icons - Multiple sizes for better compatibility -->
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" sizes="any" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" sizes="32x32" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" sizes="192x192" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpeg" sizes="512x512" />
     <link rel="apple-touch-icon" href="/logo.jpeg" />
     <link rel="shortcut icon" href="/logo.jpeg" />
+    <link rel="mask-icon" href="/logo.jpeg" color="#22c55e" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -50,7 +57,12 @@
       "name": "Greenov Africa Ltd",
       "alternateName": "Greenov Africa",
       "url": "https://www.greenovafrica.com/",
-      "logo": "https://www.greenovafrica.com/logo.jpeg",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.greenovafrica.com/logo.jpeg",
+        "width": 512,
+        "height": 512
+      },
       "description": "Empowering African smallholder farmers with solar-powered cooling technology to reduce post-harvest losses and improve food security through clean energy solutions.",
       "address": {
         "@type": "PostalAddress",
@@ -138,6 +150,13 @@
       "@type": "WebSite",
       "name": "Greenov Africa",
       "url": "https://www.greenovafrica.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.greenovafrica.com/logo.jpeg",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://www.greenovafrica.com/logo.jpeg",
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://www.greenovafrica.com/?q={search_term_string}",
